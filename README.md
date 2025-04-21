@@ -115,11 +115,32 @@ src\
  |--index.js        # App entry point
 ```
 
-## Authentication & Authorization
+## 🚀 Potential Improvements
 
-Authentication is handled via JWT tokens. Patient routes require the following permissions:
+Although the API is functional, here are areas I’d enhance with more time:
 
-- `getPatients` - To view patient data
-- `managePatients` - To create, update, or delete patients
+✅ Authentication & Security
+Add email verification status checks in auth middleware
 
-The ADMIN role includes these permissions by default.
+Implement refresh token rotation and revoke old tokens
+
+Add rate limiting and account lockout strategies for brute-force protection
+
+🧪 Testing
+Add more unit tests for services and controllers
+
+Add integration tests for auth and patient flows
+
+Setup CI pipeline for automated tests on push
+
+⚙️ Codebase Enhancements
+Improve error handling structure across controllers and services
+
+Abstract common validation schemas for reusability
+
+Refactor some services to follow clean architecture principles
+
+📊 Observability & DevOps
+Add request logging with tools like Morgan or Pino
+
+Integrate monitoring and alerting (e.g., Prometheus, Grafana)
